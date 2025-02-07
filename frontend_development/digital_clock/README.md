@@ -15,7 +15,7 @@ FullStack-Playground/
 
 ## 🚀 Features
 - Displays real-time **hours, minutes, and seconds**.
-- Shows **full date (DD-MM-YYYY format)**.
+- Shows **full date (MM-DD-YYYY format)**.
 - Displays the **current day of the week**.
 - Minimalistic and responsive design.
 

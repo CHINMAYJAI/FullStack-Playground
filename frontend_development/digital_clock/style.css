@@ -1,0 +1,149 @@
+/* Reset and basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  background: #f5f5f5; /* You can change the background color as desired */
+}
+
+/* --- Heading (Button) Styling --- */
+/* The button will be fixed at the top center */
+button {
+  position: fixed;
+  top: 20px;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid #000;
+  background: #e8e8e8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: inherit;
+  z-index: 10; /* Keeps the button on top */
+}
+
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  background: #e8e8e8;
+  transition: all 0.2s linear;
+}
+
+button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+
+button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+
+button:hover {
+  cursor: crosshair;
+}
+
+button:active {
+  /* Maintain horizontal centering when scaling */
+  transform: translateX(-50%) scale(0.95);
+}
+
+button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+
+button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+button span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+}
+
+/* --- Clock Card Styling --- */
+/* The card is positioned absolutely in the center of the viewport */
+.card {
+  width: 280px;
+  height: 260px;
+  background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+  border-radius: 15px;
+  box-shadow: rgb(0 0 0 / 70%) 5px 10px 50px, rgb(0 0 0 / 70%) -5px 0px 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center inner content horizontally */
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card:hover {
+  box-shadow: rgb(0 0 0) 5px 10px 50px, rgb(0 0 0) -5px 0px 250px;
+}
+
+/* --- Time and Date Text Styling --- */
+.time-text {
+  font-size: 50px;
+  margin: 0 0 0 15px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.day-text {
+  font-size: 18px;
+  margin: 0 0 0 15px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-bottom: 5px;
+}
+
+/* Optional: Style for the SVG moon icon (if needed) */
+.moon {
+  margin-top: 10px;
+}
+
+/* --- Responsive Adjustments --- */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+  .time-text {
+    font-size: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .day-text {
+    text-align: center;
+    margin-left: 0;
+  }
+}

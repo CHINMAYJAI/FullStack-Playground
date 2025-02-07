@@ -27,11 +27,11 @@ FullStack-Playground/
 ## 📌 Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/CHINMAYJAI/FullStack_Playground.git
+   git clone https://github.com/CHINMAYJAI/FullStack-Playground.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd FullStack_Playground/frontend_development/digital_clock
+   cd FullStack-Playground/frontend_development/digital_clock
    ```
 3. Open **index.html** in a web browser.
 

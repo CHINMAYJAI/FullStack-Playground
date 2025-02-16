@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <!-- Tailwind CSS -->
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="bg-[#202124] text-gray-200 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="w-full px-4 sm:px-8 py-3 flex justify-between items-center">
+        <!-- Left Section -->
+        <div class="flex space-x-4 text-sm sm:text-base">
+            <a href="https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header"
+                class="hover:underline">
+                About
+            </a>
+            <a href="https://store.google.com/in/" class="hover:underline">
+                Store
+            </a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="flex items-center space-x-4 text-sm sm:text-base">
+            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox" class="hover:underline">
+                Gmail
+            </a>
+            <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl" class="hover:underline">
+                Images
+            </a>
+            <!-- Apps Icon -->
+            <svg class="w-6 h-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+                viewBox="0 -960 960 960">
+                <path
+                    d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z" />
+            </svg>
+            <!-- Sign in Button -->
+            <button
+                class="bg-blue-200 text-black font-medium px-4 py-2 rounded-full text-sm sm:text-base hover:bg-gray-100">
+                Sign in
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4">
+        <div class="w-full max-w-2xl flex flex-col items-center">
+            <!-- Google Logo -->
+            <img src="assets/google.png" alt="Google Logo" class="w-48 sm:w-64 md:w-72 mb-6" />
+
+            <!-- Search Bar -->
+            <div class="w-full max-w-3xl mb-6">
+                <div
+                    class="flex items-center bg-[#303134] rounded-full px-5 py-3 border border-transparent focus-within:border-blue-500">
+                    <!-- Search Icon on Left -->
+                    <svg class="w-6 h-6 text-gray-400 mr-3" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.35 4.35a7.5 7.5 0 0012.3 12.3z" />
+                    </svg>
+                    <!-- Search Input -->
+                    <input type="text"
+                        class="bg-transparent flex-grow text-sm sm:text-base focus:outline-none placeholder-gray-400 text-gray-200" />
+                    <!-- Mic Icon -->
+                    <svg class="w-6 h-6 text-gray-400 cursor-pointer ml-2" fill="none" stroke="currentColor"
+                        stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 1a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V4a3 3 0 0 1 3-3zM19 10a7 7 0 0 1-14 0m7 7v3m-3 0h6" />
+                    </svg>
+                    <!-- Lens Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400 cursor-pointer ml-2"
+                        viewBox="0 -960 960 960" fill="currentColor">
+                        <path
+                            d="M120-120q-33 0-56.5-23.5T40-200v-480q0-33 23.5-56.5T120-760h126l74-80h240v80H355l-73 80H120v480h640v-360h80v360q0 33-23.5 56.5T760-120H120Zm640-560v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80ZM440-260q75 0 127.5-52.5T620-440q0-75-52.5-127.5T440-620q-75 0-127.5 52.5T260-440q0 75 52.5 127.5T440-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 mb-6">
+                <button
+                    class="bg-[#303134] hover:bg-[#4c4d4f] text-sm sm:text-base px-4 py-2 rounded-md hover:cursor-pointer">
+                    Google Search
+                </button>
+                <a href="https://doodles.google/">
+                    <button class="bg-[#303134] hover:bg-[#4c4d4f] text-sm sm:text-base px-4 py-2 rounded-md">
+                        I'm Feeling Lucky
+                    </button>
+                </a>
+            </div>
+
+            <!-- Single-line "Google offered in" -->
+            <!-- Use whitespace-nowrap so it doesn't wrap to multiple lines -->
+            <div class="text-xs sm:text-sm text-gray-400 whitespace-nowrap">
+                <p class="text-center">
+                    Google offered in:
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">हिन्दी</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">বাংলা</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">తెలుగు</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">मराठी</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">தமிழ்</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">ગુજરાતી</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">ಕನ್ನಡ</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">മലയാളം</a>
+                    <a href="#" class="ml-1 text-blue-400 hover:underline">ਪੰਜਾਬੀ</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#171717] w-full text-white text-sm px-4 sm:px-8 py-4">
+        <!-- Location -->
+        <div class="mb-4">
+            <p>India</p>
+        </div>
+        <hr class="text-[#202124] my-4">
+        <div class="flex justify-between">
+            <!-- Left side -->
+            <div class="flex space-x-6">
+                <a href="https://business.google.com/in/google-ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1%21o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1&authuser=0"
+                    class="hover:underline">
+                    Advertising
+                </a>
+                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+                    class="hover:underline">
+                    Business
+                </a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1" class="hover:underline">
+                    How Search Works
+                </a>
+            </div>
+            <!-- Right side -->
+            <div class="flex space-x-6">
+                <a href="https://policies.google.com/privacy?hl=en-IN&fg=1" class="hover:underline">
+                    Privacy
+                </a>
+                <a href="https://policies.google.com/terms?hl=en-IN&fg=1" class="hover:underline">
+                    Terms
+                </a>
+                <p class="hover:underline hover:cursor-pointer">Settings</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

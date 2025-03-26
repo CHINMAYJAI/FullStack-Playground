@@ -1,0 +1,117 @@
+/* make the webpage responsive */
+/* then move forward */
+
+/* universally setting up the margin and padding of the webpage as 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* setting the background color and applying the flexbox property in the webpage */
+body {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2vh;
+    /* Added padding to avoid content touching the edges */
+}
+
+/* setting the different properties of the webpage and making the box at the center where all the work has to be done */
+.container {
+    width: 90%;
+    /* Limit max width for large screens */
+    max-width: 1200px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* dividing the container into two parts */
+.container .authentication-page {
+    /* background-color: red; */
+    height: 100%;
+    width: 45%;
+    padding: 2vh 2vw;
+}
+
+.container .image-box {
+    background-color: lightgrey;
+    height: 100%;
+    width: 45%;
+    padding: 20vh 5vh;
+}
+
+.container .image-box img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10vw;
+}
+
+/* LogIn button in authentication-page */
+.container .authentication-page .login-button button,
+.container .authentication-page .change-password-button button {
+    width: 80%;
+    height: 6vh;
+    color: white;
+    background-color: blue;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: medium;
+    margin: 1vh auto;
+    /* Center buttons horizontally */
+    display:block;
+}
+
+/* formatting the heading of the authentication-page */
+.container .authentication-page h1 {
+    margin-top: 2vh;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* formatting the paragraph of the authentication-page */
+.container .authentication-page p {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: x-large;
+}
+
+/* formatting the username-textbox and password-textbox */
+.container .authentication-page .username-textbox,
+.container .authentication-page .password-textbox {
+    margin: 2vh 0;
+    font-size: x-large;
+    padding-left: 1vw;
+}
+
+.container .authentication-page #username,
+.container .authentication-page #password {
+    font-size: large;
+    margin-left: 1vh;
+    padding: 1vh 1vw;
+    width: 80%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .container .authentication-page,
+    .container .image-box {
+        width: 100%;
+        padding: 4vh 5vw;
+    }
+
+    .container .authentication-page .login-button button,
+    .container .authentication-page .change-password-button button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication KeepAlive</title>
+    <link rel="stylesheet" href="/styling/firewall_authentication_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="authentication-page">
+
+            <h1>Authentication KeepAlive</h1>
+            <p>This browser window is used to keep your authentication session active. Please leave it open in the background and open a new tab to continue.</p>
+
+            <span class="logout-button">
+                <button onclick="window.location.href = '/index.html';" type="button">LogOut</button>
+            </span>
+
+            <!-- ending of authentication-page block element -->
+        </div>
+        <div class="image-box">
+            <img src="assets/uu_logo.jpeg" alt="Uttaranchal University">
+        </div>
+    </div>
+    <div class="c">
+        <div id="countdown"></div>
+    </div>
+    <script src="/logics/countDown.js"></script>
+</body>
+
+</html>

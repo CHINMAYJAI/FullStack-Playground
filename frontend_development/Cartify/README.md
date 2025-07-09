@@ -27,12 +27,12 @@ To get started with Cartify, follow these steps:
 
 1. **Clone the Repository**: Use the following command to clone the repository to your local machine:
    ```bash
-   git clone https://github.com/CHINMAYJAI/Cartify.git
+   git clone https://github.com/CHINMAYJAI/FullStack-Playground.git
    ```
 
 2. **Navigate to the Project Directory**: Change into the project directory:
    ```bash
-   cd Cartify
+   cd FullStack-Playground/frontend_development/Cartify
    ```
 
 3. **Install Dependencies**: Run the following command to install all necessary dependencies:
@@ -51,30 +51,29 @@ Open your web browser and navigate to `http://localhost:3000` to view the applic
 ## Project Structure
 The project follows a structured layout, making it easy to navigate:
 ```
-Cartify/
   ├── Cartify/
-  │   ├── eslint.config.js
-  │   ├── index.html
-  │   ├── package-lock.json
-  │   ├── package.json
-  │   ├── public/
-  │   │   └── favicon.ico
-  │   ├── README.md
-  │   ├── src/
-  │   │   ├── App.jsx
-  │   │   ├── assets/
-  │   │   ├── components/
-  │   │   │   ├── Cards/
-  │   │   │   │   ├── Cards.jsx
-  │   │   │   │   └── index.js
-  │   │   │   ├── CardTracker/
-  │   │   │   │   ├── CardTracker.jsx
-  │   │   │   │   └── index.js
-  │   │   │   ├── ThemeSwitcher/
-  │   │   │   │   ├── index.js
-  │   │   │   │   └── ThemeSwitcher.jsx
-  │   │   ├── main.jsx
-  │   └── vite.config.js
+     ├── eslint.config.js
+     ├── index.html
+     ├── package-lock.json
+     ├── package.json
+     ├── public/
+     │   └── favicon.ico
+     ├── README.md
+     ├── src/
+     │   ├── App.jsx
+     │   ├── assets/
+     │   ├── components/
+     │   │   ├── Cards/
+     │   │   │   ├── Cards.jsx
+     │   │   │   └── index.js
+     │   │   ├── CardTracker/
+     │   │   │   ├── CardTracker.jsx
+     │   │   │   └── index.js
+     │   │   ├── ThemeSwitcher/
+     │   │   │   ├── index.js
+     │   │   │   └── ThemeSwitcher.jsx
+     │   ├── main.jsx
+     └── vite.config.js
 ```
 
 ## Contributing
